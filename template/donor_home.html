@@ -1,0 +1,87 @@
+{% extends 'home_base.html' %}
+
+
+{% block content1 %}
+
+<div class="container-xl">
+<!--1st post -->
+<div class="row">
+    <div class="post clearfix col">
+        <!-- post for image -->
+        <div class="postimg float-left">
+            {%if our_vision.body_img1 %}
+            <img src="{{ our_vision.body_img1.url }}" class="img-thumbnail" alt="Post 1st image">
+            {% else %}
+            <img src="../static/imge/a.jpg" class="img-thumbnail" alt="Post 1st image">
+            {% endif%}
+        </div>
+
+        <!-- post for blog -->
+        <div class="post_dec float-right">
+            {% if our_vision.title1 %}
+            <h2 class="font-weight-bold">{{ our_vision.title1 }}</h2>
+            {% else %}
+            <h2 class="font-weight-bold">Title 1</h2>
+            {% endif%}
+            {% if our_vision.body_text1 %}
+            <p class="text-break">{{ our_vision.body_text1 }}</p>
+            {% else %}
+            <p class="text-break">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            {% endif%}
+        </div>
+    </div>
+
+    <!-- 2nd post -->
+    <div class="post2 clearfix col">
+        <!-- pors for image -->
+        <div class="postimg2 float-right">
+            {% if our_vision.body_img2 %}
+            <img src="{{ our_vision.body_img2.url }}" class="img-thumbnail" alt="Post 1st image">
+            {% else %}
+            <img src="../static/imge/b.jpg" class="img-thumbnail" alt="Post 1st image">
+            {% endif %}
+        </div>
+        <!-- post for blog -->
+        <div class="post_dec2 float-left">
+            {% if our_vision.title2 %}
+            <h2 class="font-weight-bold">{{ our_vision.title2 }}</h2>
+            {% else %}
+            <h2 class="font-weight-bold">Title 2</h2>
+            {% endif %}
+            {% if our_vision.body_text2 %}
+            <p class="text-break text-justify">{{ our_vision.body_text2 }}</p>
+            {% else %}
+            <p class="text-break text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- 3dr post -->
+    <div class="post3 clearfix col">
+        <!-- post for image -->
+        <div class="postimg3 float-left">
+            {% if our_vision.body_img3 %}
+            <img src="{{ our_vision.body_img3.url }}" class="img-thumbnail" alt="Post 1st image">
+            {% else %}
+            <img src="../static/imge/c.jpg" class="img-thumbnail" alt="Post 1st image">
+            {% endif %}
+        </div>
+        <!-- post for blog -->
+        <div class="post_dec3 float-right">
+            {% if our_vision.title3 %}
+            <h2 class="font-weight-bold">{{ our_vision.title3 }}</h2>
+            {% else %}
+            <h2 class="font-weight-bold">Title 3</h2>
+            {% endif %}
+            {% if our_vision.body_text3 %}
+            <p class="text-break text-justify">{{ our_vision.body_text3 }}</p>
+            {% else %}
+            <p class="text-break text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+</div>  
+
+{% endblock %}
+
