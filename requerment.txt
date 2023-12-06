@@ -1,5 +1,6 @@
 Django==2.2.8
 django-filter==2.3.0
+django-jazzmin==2.6.0
 django-mapbox-location-field==1.5.0
 djangorestframework==3.11.0
 Markdown==3.2.2
