@@ -3,6 +3,11 @@
 
 {% block content%}
 
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
+<script src="{% static 'js/popper-1.14.7.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
 <!-- Carousel  -->
 <div class="carousel_slid">
     <div class="opacity_carousel"></div>
@@ -42,7 +47,7 @@
                 {% if home_slider %}
                     <img src="{{ home_slider.slider_3.url }}" alt="Slid Image">
                 {%else%}
-                <img src="../static/imge/slider/slider2.jpg" alt="Slid Image">
+                <img src="../static/imge/slider/slider3.jpg" alt="Slid Image">
                 {% endif %}
                     <div class="carousel-caption">
                     <h3>Just Donate Blood</h3>
