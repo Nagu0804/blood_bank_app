@@ -25,5 +25,6 @@ urlpatterns = [
     path('donorreg/', include('dreg.urls'), name='dregsite'),
     path('search/', include('search.urls'), name='searchsite'),
     path('about/', include('dabout.urls'), name='aboutsite'),
-    path('contact/', include('contact.urls'), name='contactsite')
+    path('contact/', include('contact.urls'), name='contactsite'),
+    path('user/', include('login.urls'), name='login')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

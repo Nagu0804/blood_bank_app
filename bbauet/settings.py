@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'dreg',
     'dabout',
     'contact',
+    'login',
 ]
 
 MIDDLEWARE = [
