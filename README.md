@@ -1,75 +1,67 @@
-    <h1>Blood Bank App Readme</h1>
+# Blood Bank App Readme
 
-    <h2>Overview</h2>
+### Overview
+This is a blood bank application designed to manage blood donation and distribution. The application is containerized using Docker for easy deployment and scalability. Follow the instructions below to set up and run the Blood Bank App on your local machine.
 
-    <p>This is a blood bank application designed to manage blood donation and distribution. The application is containerized using Docker for easy deployment and scalability. Follow the instructions below to set up and run the Blood Bank App on your local machine.</p>
+### Prerequisites
 
-    <h2>Prerequisites</h2>
+Docker installed on your machine (Install Docker)
 
-    <ul>
-        <li>Docker installed on your machine (<a href="https://docs.docker.com/get-docker/">Install Docker</a>)</li>
-    </ul>
+### Installation
 
-    <h2>Installation</h2>
+Clone the repository:
 
-    <ol>
-        <li><strong>Clone the repository:</strong></li>
+bash
+Copy code
+git clone https://github.com/your-username/blood_bank_app.git
 
-        <pre><code>git clone https://github.com/your-username/blood_bank_app.git
 cd blood_bank_app
-        </code></pre>
 
-        <li><strong>Build the Docker image:</strong></li>
+### Build the Docker image:
 
-        <pre><code>docker build -t &lt;app_name&gt; .
-        </code></pre>
+bash
+Copy code
+docker build -t <app_name> .
 
-        <li><strong>Run the Docker container:</strong></li>
+### Run the Docker container:
 
-        <pre><code>docker run -p 8000:8000 &lt;app_name&gt;
-        </code></pre>
-    </ol>
+bash
+Copy code
+docker run -p 8000:8000 <app_name>
 
-    <h2>Database Migration</h2>
+### Database Migration
 
-    <p>To set up the database inside the container, follow these steps:</p>
+To set up the database inside the container, follow these steps:
 
-    <ol>
-        <li><strong>Access the container shell:</strong></li>
+### Access the container shell:
 
-        <pre><code>docker exec -it CONTAINER_NAME_OR_ID /bin/bash
-        </code></pre>
+bash
+Copy code
+docker exec -it CONTAINER_NAME_OR_ID /bin/bash
 
-        <li><strong>Run migrations:</strong></li>
+### Run migrations:
 
-        <pre>  
-            <code>
-                python3 manage.py makemigrations
-                python3 manage.py migrate
-            </code>
-        </pre>
-    </ol>
+bash
+Copy code
+python3 manage.py makemigrations
+python3 manage.py migrate
 
-    <h2>Access the Application</h2>
+### Access the Application
 
-    <p>Once the container is running and the database is migrated, access the Blood Bank App through your web browser:</p>
+Once the container is running and the database is migrated, access the Blood Bank App through your web browser:
 
-    <ul>
-        <li><a href="http://localhost:8000">http://localhost:8000</a></li>
-        <li><a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></li>
-        <li><a href="http://0.0.0.0:8000">http://0.0.0.0:8000</a></li>
-    </ul>
+* http://localhost:8000
+* http://127.0.0.1:8000
+* http://0.0.0.0:8000
 
-    <h2>Usage</h2>
+### Usage
 
-    <p>Explore the Blood Bank App to manage blood donations and distributions. You can perform various operations like adding donors, tracking available blood types, and managing requests.</p>
+Explore the Blood Bank App to manage blood donations and distributions. You can perform various operations like adding donors, tracking available blood types, and managing requests.
 
-    <h2>Contributing</h2>
+### Contributing
 
-    <p>If you'd like to contribute to the Blood Bank App, please follow the standard contribution guidelines of the project.</p>
+If you'd like to contribute to the Blood Bank App, please follow the standard contribution guidelines of the project.
 
-    <h2>License</h2>
+### License
 
-    <p>This Blood Bank App is open-source and distributed under the <a href="LICENSE">MIT License</a>.</p>
-
-    <p>Feel free to contact us for any issues or improvements!</p>
+This Blood Bank App is open-source and distributed under the MIT License.
