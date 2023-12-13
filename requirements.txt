@@ -8,3 +8,4 @@ Pillow==10.1.0
 psycopg2-binary==2.9.9
 pytz==2019.3
 sqlparse==0.3.1
+django_resized==1.0.2
