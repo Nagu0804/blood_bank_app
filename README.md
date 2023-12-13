@@ -1,67 +1,75 @@
-# Blood Bank App Readme
+    <h1>Blood Bank App Readme</h1>
 
-### Overview
-This is a blood bank application designed to manage blood donation and distribution. The application is containerized using Docker for easy deployment and scalability. Follow the instructions below to set up and run the Blood Bank App on your local machine.
+    <h2>Overview</h2>
 
-### Prerequisites
+    <p>This is a blood bank application designed to manage blood donation and distribution. The application is containerized using Docker for easy deployment and scalability. Follow the instructions below to set up and run the Blood Bank App on your local machine.</p>
 
-Docker installed on your machine (Install Docker)
+    <h2>Prerequisites</h2>
 
-### Installation
+    <ul>
+        <li>Docker installed on your machine (<a href="https://docs.docker.com/get-docker/">Install Docker</a>)</li>
+    </ul>
 
-Clone the repository:
+    <h2>Installation</h2>
 
-bash
-Copy code
-git clone https://github.com/your-username/blood_bank_app.git
+    <ol>
+        <li><strong>Clone the repository:</strong></li>
 
+        <pre><code>git clone https://github.com/your-username/blood_bank_app.git
 cd blood_bank_app
+        </code></pre>
 
-### Build the Docker image:
+        <li><strong>Build the Docker image:</strong></li>
 
-bash
-Copy code
-docker build -t <app_name> .
+        <pre><code>docker build -t &lt;app_name&gt; .
+        </code></pre>
 
-### Run the Docker container:
+        <li><strong>Run the Docker container:</strong></li>
 
-bash
-Copy code
-docker run -p 8000:8000 <app_name>
+        <pre><code>docker run -p 8000:8000 &lt;app_name&gt;
+        </code></pre>
+    </ol>
 
-### Database Migration
+    <h2>Database Migration</h2>
 
-To set up the database inside the container, follow these steps:
+    <p>To set up the database inside the container, follow these steps:</p>
 
-### Access the container shell:
+    <ol>
+        <li><strong>Access the container shell:</strong></li>
 
-bash
-Copy code
-docker exec -it CONTAINER_NAME_OR_ID /bin/bash
+        <pre><code>docker exec -it CONTAINER_NAME_OR_ID /bin/bash
+        </code></pre>
 
-### Run migrations:
+        <li><strong>Run migrations:</strong></li>
 
-bash
-Copy code
-python3 manage.py makemigrations
-python3 manage.py migrate
+        <pre>  
+            <code>
+                python3 manage.py makemigrations
+                python3 manage.py migrate
+            </code>
+        </pre>
+    </ol>
 
-### Access the Application
+    <h2>Access the Application</h2>
 
-Once the container is running and the database is migrated, access the Blood Bank App through your web browser:
+    <p>Once the container is running and the database is migrated, access the Blood Bank App through your web browser:</p>
 
-http://localhost:8000
-http://127.0.0.1:8000
-http://0.0.0.0:8000
+    <ul>
+        <li><a href="http://localhost:8000">http://localhost:8000</a></li>
+        <li><a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></li>
+        <li><a href="http://0.0.0.0:8000">http://0.0.0.0:8000</a></li>
+    </ul>
 
-### Usage
+    <h2>Usage</h2>
 
-Explore the Blood Bank App to manage blood donations and distributions. You can perform various operations like adding donors, tracking available blood types, and managing requests.
+    <p>Explore the Blood Bank App to manage blood donations and distributions. You can perform various operations like adding donors, tracking available blood types, and managing requests.</p>
 
-### Contributing
+    <h2>Contributing</h2>
 
-If you'd like to contribute to the Blood Bank App, please follow the standard contribution guidelines of the project.
+    <p>If you'd like to contribute to the Blood Bank App, please follow the standard contribution guidelines of the project.</p>
 
-### License
+    <h2>License</h2>
 
-This Blood Bank App is open-source and distributed under the MIT License.
+    <p>This Blood Bank App is open-source and distributed under the <a href="LICENSE">MIT License</a>.</p>
+
+    <p>Feel free to contact us for any issues or improvements!</p>
