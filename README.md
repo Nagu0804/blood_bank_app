@@ -13,7 +13,7 @@ Clone the repository:
 
 ```
 
-git clone https://github.com/Nagu0804/blood_bank_app.git
+git clone https://github.com/your-source-code.git
 
 cd blood_bank_app
 ```

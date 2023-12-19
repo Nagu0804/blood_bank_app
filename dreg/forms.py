@@ -16,6 +16,8 @@ class DonorRegistration(ModelForm):
             'phone_number' : forms.NumberInput(attrs={'class':'form-control', 'required':'True'}),
             'email' : forms.EmailInput(attrs={'class':'form-control', 'required':'True'}),
             'occupation' : forms.TextInput(attrs={'class':'form-control', 'required':'True'}),
+            'state': forms.Select(attrs={'class': 'form-control', 'required': 'True'}),
+            'district': forms.TextInput(attrs={'class': 'form-control', 'required': 'True'}),
             'home_address' : forms.Textarea(attrs={'class':'form-control', 'required':'True'}),
             'last_donate_date' : forms.TextInput(attrs={'class':'form-control', 'required':'True'}),
             'any_diseases' : forms.Select(attrs={'class':'form-control', 'required':'True'}),

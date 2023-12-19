@@ -16,7 +16,10 @@ def searchdisplay(request):
         if search_forms.is_valid():
             blood_group = search_forms.cleaned_data['select_blood_group']
             location = search_forms.cleaned_data['select_location']
-            donor_filter = DonorList.objects.filter(blood_group=blood_group, home_address__icontains=location)
+            print("Blood Group:", blood_group)
+            print("Location:", location)
+            donor_filter = DonorList.objects.filter(blood_group=blood_group, state__icontains=location)
+            print(donor_filter)
             context = {
                 'donor_filter' : donor_filter
             }

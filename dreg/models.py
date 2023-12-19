@@ -31,6 +31,45 @@ class DonorList(models.Model):
     phone_number = models.IntegerField(blank=True, null=True)
     email = models.EmailField(max_length=100, blank=True, null=True, unique=True)
     occupation = models.CharField(max_length=10, blank=True, null=True)
+    indian_states = [
+        ('Andhra Pradesh', 'Andhra Pradesh'),
+        ('Arunachal Pradesh', 'Arunachal Pradesh'),
+        ('Assam', 'Assam'),
+        ('Bihar', 'Bihar'),
+        ('Chhattisgarh', 'Chhattisgarh'),
+        ('Goa', 'Goa'),
+        ('Gujarat', 'Gujarat'),
+        ('Haryana', 'Haryana'),
+        ('Himachal Pradesh', 'Himachal Pradesh'),
+        ('Jharkhand', 'Jharkhand'),
+        ('Karnataka', 'Karnataka'),
+        ('Kerala', 'Kerala'),
+        ('Madhya Pradesh', 'Madhya Pradesh'),
+        ('Maharashtra', 'Maharashtra'),
+        ('Manipur', 'Manipur'),
+        ('Meghalaya', 'Meghalaya'),
+        ('Mizoram', 'Mizoram'),
+        ('Nagaland', 'Nagaland'),
+        ('Odisha', 'Odisha'),
+        ('Punjab', 'Punjab'),
+        ('Rajasthan', 'Rajasthan'),
+        ('Sikkim', 'Sikkim'),
+        ('Tamil Nadu', 'Tamil Nadu'),
+        ('Telangana', 'Telangana'),
+        ('Tripura', 'Tripura'),
+        ('Uttar Pradesh', 'Uttar Pradesh'),
+        ('Uttarakhand', 'Uttarakhand'),
+        ('West Bengal', 'West Bengal'),
+        ('Andaman and Nicobar Islands', 'Andaman and Nicobar Islands'),
+        ('Chandigarh', 'Chandigarh'),
+        ('Dadra and Nagar Haveli and Daman and Diu', 'Dadra and Nagar Haveli and Daman and Diu'),
+        ('Delhi', 'Delhi'),
+        ('Lakshadweep', 'Lakshadweep'),
+        ('Puducherry', 'Puducherry'),
+    ]
+    state = models.CharField(max_length=50,choices = indian_states, blank=True, null=True)
+
+    district = models.CharField(max_length=50, blank=True, null=True)
     home_address = models.TextField(blank=True, null=True)
     last_donate_date = models.CharField(max_length=50, blank=True, null=True)
     any_diseases_choices=[

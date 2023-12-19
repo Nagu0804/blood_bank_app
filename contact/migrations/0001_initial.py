@@ -12,12 +12,12 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='SearchLogo',
+            name='ContactPageBody',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(blank=True, max_length=10, null=True)),
-                ('logo_number', models.IntegerField(blank=True, null=True)),
-                ('logo_image', models.ImageField(blank=True, null=True, upload_to='logo')),
+                ('id_contact', models.IntegerField(blank=True, null=True)),
+                ('title', models.CharField(blank=True, max_length=20, null=True)),
+                ('contact_text', models.TextField(blank=True, default='Enter the address', null=True)),
             ],
         ),
     ]

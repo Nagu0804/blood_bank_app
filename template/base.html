@@ -41,20 +41,14 @@
     <!-- navbar item -->
     <div class="col">
       <ul class="navbar-nav flex-row-reverse">
-        <li class="nav-item text-dark">
-          <a class="nav-link font-weight-bolder" href="{% url 'aboutsite1' %}">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bolder" href="{% url 'contactsite1' %}">Contact Us</a>
-        </li>
         {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link font-weight-bolder" href="{% url 'logout' %}">Logout</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link font-weight-bolder" href="{% url 'profile' %}">Profile</a>
         </li>
         {% else %}
-        <li class="nav-item">
-          <a class="nav-link font-weight-bolder" href="{% url 'signup' %}">Sign Up</a>
-        </li>
         <!-- Dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link font-weight-bolder" href="#" data-toggle="dropdown">
@@ -65,7 +59,16 @@
             <a class="dropdown-item font-weight-bolder" href="/admin/">Admin</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bolder" href="{% url 'signup' %}">Sign Up</a>
+        </li>
         {% endif %}
+        <li class="nav-item text-dark">
+          <a class="nav-link font-weight-bolder" href="{% url 'aboutsite1' %}">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bolder" href="{% url 'contactsite1' %}">Contact Us</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link font-weight-bolder" href="{% url 'dregsite' %}">Donor Registration</a>
         </li>
