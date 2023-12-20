@@ -10,16 +10,20 @@
                 <th>Donor Name</th>
                 <th class="text-uppercase">Blood Group</th>
                 <th>Last Donate Date</th>
-                <th>Address</th>
+                <th>Donor District</th>
             </tr>
         </thead>
         {% for donor in donor_filter %}
             <tbody>
                 <tr>
+                    {% if user.is_authenticated %}
                     <td><a href="{% url 'donorlistdetailsite' donor.email %}">{{donor.name}}</a></td>
+                    {% else %}
+                    <td><a href="{% url 'login' %}">{{donor.name}}</a></td>
+                    {% endif %}
                     <td>{{donor.blood_group | capfirst }}</td>
                     <td>{{donor.last_donate_date}}</td>
-                    <td>{{donor.home_address}}</td>
+                    <td>{{donor.district}}</td>
                 </tr>
             </tbody>
         {% endfor %}

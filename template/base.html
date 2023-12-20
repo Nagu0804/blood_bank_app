@@ -48,6 +48,9 @@
         <li class="nav-item">
           <a class="nav-link font-weight-bolder" href="{% url 'profile' %}">Profile</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bolder" href="{% url 'dregsite' %}">Donor Registration</a>
+        </li>
         {% else %}
         <!-- Dropdown -->
         <li class="nav-item dropdown">
@@ -68,9 +71,6 @@
         </li>
         <li class="nav-item">
           <a class="nav-link font-weight-bolder" href="{% url 'contactsite1' %}">Contact Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bolder" href="{% url 'dregsite' %}">Donor Registration</a>
         </li>
         <li class="nav-item font-weight-bolder">
           <a class="nav-link" href="{% url 'searchsite1' %}">Search</a>

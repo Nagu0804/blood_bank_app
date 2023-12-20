@@ -10,8 +10,9 @@
       {% else %}
         <img src="../static/imge/logo/blogo.png" class="rounded-circle" alt="Logo" width="221" height="227">
       {% endif %}
-        <form action="{% url 'donorlistsite' %}" method="POST">
-          {% csrf_token %}
+
+      <form action="{% url 'donorlistsite' %}" method="POST">
+        {% csrf_token %}
           <div class="input-group mb-3">
             {{forms_search.select_blood_group}}
             {{forms_search.select_location}}

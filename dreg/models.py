@@ -71,7 +71,7 @@ class DonorList(models.Model):
 
     district = models.CharField(max_length=50, blank=True, null=True)
     home_address = models.TextField(blank=True, null=True)
-    last_donate_date = models.CharField(max_length=50, blank=True, null=True)
+    last_donate_date = models.DateField(blank=True, null=True)
     any_diseases_choices=[
         ("yes","Yes"),
         ("no","No"),
